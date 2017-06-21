@@ -24,7 +24,16 @@
 		</dependency>
 		<!-- end::junit[] -->
 	</dependencies>
-	
+	<distributionManagement>
+            <repository>
+                     <id>nexus</id>
+                     <url>http://54.162.210.0:8081/nexus/content/repositories/releases/</url>
+           </repository>
+        <snapshotRepository>
+                 <id>nexus</id>
+                 <url>http://54.162.210.0:8081/nexus/content/repositories/snapshots/</url>
+           </snapshotRepository>
+  </distributionManagement>
 <profiles>
   <profile>
           <id>sonar</id>
